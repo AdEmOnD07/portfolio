@@ -39,7 +39,7 @@ function About() {
         </div>
         <div className="profile-details">
           <h3>Adeniyi Raymond</h3>
-          <p>// Full Stack Engineer</p>
+          <p>Full Stack Engineer</p>
           <ul className="profile-details-list">
             <li>
               <span>Location:</span>
@@ -48,6 +48,10 @@ function About() {
             <li>
               <span>Email:</span>
               <span>adeniyiraymond04@gmail.com</span>
+            </li>
+            <li>
+              <span>WhatsApp / Call:</span>
+              <span><a href="tel:+2349160143639" style={{ color: 'var(--color-orange)' }}>+234 916 014 3639</a></span>
             </li>
             <li>
               <span>Freelance:</span>

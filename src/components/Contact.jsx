@@ -15,12 +15,12 @@ function Contact() {
     
     // Quick validation
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
-      setStatus({ type: 'error', message: '// All fields are required.' })
+      setStatus({ type: 'error', message: 'All fields are required.' })
       return
     }
 
     if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      setStatus({ type: 'error', message: '// Please enter a valid email address.' })
+      setStatus({ type: 'error', message: 'Please enter a valid email address.' })
       return
     }
 
@@ -30,7 +30,7 @@ function Contact() {
     // Simulate API request
     setTimeout(() => {
       setIsSubmitting(false)
-      setStatus({ type: 'success', message: '// Success! Your message has been sent. I will get back to you shortly.' })
+      setStatus({ type: 'success', message: 'Success! Your message has been sent. I will get back to you shortly.' })
       setFormData({ name: '', email: '', message: '' })
     }, 1500)
   }
@@ -93,7 +93,7 @@ function Contact() {
                 <h4>Phone & WhatsApp</h4>
                 <p>
                   <a href="tel:+2349160143639" style={{ marginRight: '16px' }}>+234 916 014 3639</a>
-                  <a href="https://wa.me/2349160143639" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-orange)' }}>// Chat</a>
+                  <a href="https://wa.me/2349160143639" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-orange)' }}>Chat</a>
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@ function Contact() {
         <div className="contact-form-wrapper glass-panel">
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label className="form-label" htmlFor="name">// sender_name</label>
+              <label className="form-label" htmlFor="name">sender_name</label>
               <input 
                 type="text" 
                 id="name" 
@@ -131,7 +131,7 @@ function Contact() {
             </div>
 
             <div className="form-group">
-              <label className="form-label" htmlFor="email">// sender_email</label>
+              <label className="form-label" htmlFor="email">sender_email</label>
               <input 
                 type="email" 
                 id="email" 
@@ -145,7 +145,7 @@ function Contact() {
             </div>
 
             <div className="form-group">
-              <label className="form-label" htmlFor="message">// transmission_payload</label>
+              <label className="form-label" htmlFor="message">transmission_payload</label>
               <textarea 
                 id="message" 
                 name="message" 

@@ -201,25 +201,25 @@ function Projects() {
           className={`filter-btn ${activeFilter === 'all' ? 'active' : ''}`}
           onClick={() => setActiveFilter('all')}
         >
-          // all_projects
+          all_projects
         </button>
         <button 
           className={`filter-btn ${activeFilter === 'frontend' ? 'active' : ''}`}
           onClick={() => setActiveFilter('frontend')}
         >
-          // frontend
+          frontend
         </button>
         <button 
           className={`filter-btn ${activeFilter === 'backend' ? 'active' : ''}`}
           onClick={() => setActiveFilter('backend')}
         >
-          // backend
+          backend
         </button>
         <button 
           className={`filter-btn ${activeFilter === 'fullstack' ? 'active' : ''}`}
           onClick={() => setActiveFilter('fullstack')}
         >
-          // full_stack
+          full_stack
         </button>
       </div>
 

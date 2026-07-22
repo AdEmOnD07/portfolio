@@ -6,7 +6,7 @@ function Home({ onNavigate }) {
       <section className="hero-section">
         {/* Left Side: Copy */}
         <div className="hero-content">
-          <div className="hero-tagline">// welcome to my workspace</div>
+          <div className="hero-tagline">welcome to my workspace</div>
           <h1 className="hero-title">
             Designing <span style={{ color: 'var(--color-orange)' }}>clean</span> code.<br />
             Building <span style={{ color: 'var(--color-orange)' }}>scalable</span> systems.
