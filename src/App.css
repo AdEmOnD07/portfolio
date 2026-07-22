@@ -241,6 +241,7 @@
   text-align: left;
   transform: rotateY(-5deg) rotateX(5deg);
   transition: transform 0.5s ease;
+  background: #0d0f12 !important;
 }
 
 .terminal-mock:hover {
@@ -260,7 +261,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--color-border);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .terminal-dot.red { background-color: #ef4444; }
@@ -270,13 +271,13 @@
 .terminal-title {
   margin-left: 10px;
   font-size: 0.75rem;
-  color: var(--color-text-dim);
+  color: #5c6270 !important;
 }
 
 .terminal-body {
   padding: 20px;
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: #a9b2c3 !important;
   line-height: 1.5;
 }
 
@@ -736,7 +737,7 @@
   border: 1px solid var(--color-border);
   border-radius: 6px;
   padding: 12px 16px;
-  color: #fff;
+  color: var(--color-text-main);
   font-size: 1rem;
   outline: none;
   transition: all 0.2s ease;
