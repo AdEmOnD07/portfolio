@@ -39,7 +39,7 @@ function About() {
         </div>
         <div className="profile-details">
           <h3>Adeniyi Raymond</h3>
-          <p>Full Stack Engineer</p>
+          <p>Cybersecurity & Systems Developer</p>
           <ul className="profile-details-list">
             <li>
               <span>Location:</span>
@@ -69,7 +69,7 @@ function About() {
         </div>
         <h2 className="section-title">Who is Adeniyi?</h2>
         <p className="about-bio">
-          I am a software engineer focused on building fast, elegant web layouts. I have a passion for visual aesthetics, clean architecture, and clean components. I specialize in designing modular React structures, developing optimized backend API layers, and setting up stable server deployments.
+          Cybersecurity student & software developer blending low-level system logic, core algorithm design, and virtualization. Passionate about building robust software, secure environments, and solving complex technical problems under the hood.
         </p>
 
         {/* Technical Skills Categorized */}

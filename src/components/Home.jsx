@@ -12,7 +12,7 @@ function Home({ onNavigate }) {
             Building <span style={{ color: 'var(--color-orange)' }}>scalable</span> systems.
           </h1>
           <p className="hero-description">
-            I am a full-stack engineer and interface designer. I build high-performance web applications using React, Node.js, and custom cloud-native architectures.
+            I am a cybersecurity student and software developer. I build secure software architectures, develop low-level system integrations, and design robust virtual environments.
           </p>
           <div className="hero-ctas">
             <button className="btn btn-primary" onClick={() => onNavigate('projects')}>
