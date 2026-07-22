@@ -10,7 +10,7 @@ function Contact() {
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     
     // Quick validation
@@ -27,12 +27,36 @@ function Contact() {
     setIsSubmitting(true)
     setStatus({ type: '', message: '' })
 
-    // Simulate API request
-    setTimeout(() => {
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/adeniyiraymond04@gmail.com", {
+        method: "POST",
+        headers: { 
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        })
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setStatus({ 
+          type: 'success', 
+          message: 'Success! Your message has been sent. If this is your first submission, please check adeniyiraymond04@gmail.com to activate FormSubmit.' 
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus({ type: 'error', message: result.message || 'Something went wrong. Please try again.' });
+      }
+    } catch (error) {
+      setStatus({ type: 'error', message: 'Network error. Please check your connection and try again.' });
+    } finally {
       setIsSubmitting(false)
-      setStatus({ type: 'success', message: 'Success! Your message has been sent. I will get back to you shortly.' })
-      setFormData({ name: '', email: '', message: '' })
-    }, 1500)
+    }
   }
 
   return (
