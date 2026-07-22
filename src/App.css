@@ -11,10 +11,17 @@
   top: 0;
   height: var(--header-height);
   z-index: 100;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
+}
+
+.app-header.scrolled {
+  background-color: var(--color-bg-card);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .header-container {

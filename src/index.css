@@ -31,6 +31,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* White (Light) Theme Override */
+[data-theme='white'] {
+  --color-bg-deep: #ffffff;
+  --color-bg-card: rgba(243, 244, 246, 0.85);
+  --color-bg-card-hover: #ffffff;
+  --color-text-main: #121316;
+  --color-text-muted: #31343d;
+  --color-text-dim: #4e525d;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-hover: rgba(0, 0, 0, 0.15);
+  --color-grid-lines: rgba(0, 0, 0, 0.025);
+  --color-orange-grid-lines: rgba(255, 85, 0, 0.015);
+}
+
+/* Dark Theme Override */
+[data-theme='dark'] {
+  --color-bg-deep: #090a0c;
+  --color-bg-card: #101216;
+  --color-bg-card-hover: #171a21;
+  --color-text-main: #f3f4f6;
+  --color-text-muted: #8e95a5;
+  --color-text-dim: #5c6270;
+  --color-border: #1a1d24;
+  --color-border-hover: #262c37;
+  --color-grid-lines: rgba(255, 255, 255, 0.015);
+  --color-orange-grid-lines: rgba(255, 85, 0, 0.015);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
