@@ -67,14 +67,6 @@
 
 body {
   background-color: var(--color-bg-deep);
-  /* The "Hash Grid" background */
-  background-image: 
-    linear-gradient(to right, var(--color-grid-lines) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--color-grid-lines) 1px, transparent 1px),
-    linear-gradient(to right, var(--color-orange-grid-lines) 2px, transparent 2px),
-    linear-gradient(to bottom, var(--color-orange-grid-lines) 2px, transparent 2px);
-  background-size: 40px 40px, 40px 40px, 200px 200px, 200px 200px;
-  background-position: center top;
   color: var(--color-text-main);
   font-family: var(--font-sans);
   font-size: 16px;
